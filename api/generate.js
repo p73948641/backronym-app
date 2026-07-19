@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   const apiKey = (process.env.GEMINI_API_KEY || '').trim();
   
   // 暫時用 gemini-1.5-flash 觸發測試
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${apiKey}`;
 
   const prompt = `Please create a backronym for the word "${word}". 
   Rules:
